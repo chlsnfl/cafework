@@ -85,16 +85,32 @@
     <!-- /header top -->
 
     <!-- header main -->
-    <div class="main container d-flex ">
+    <div class="main container d-flex align-items-center">
         <a href="#" class="logo d-block"><img src="images/cafelogo.png" alt = "다음로고"></a>
         <ul class="main-list list-style-none d-flex text-center">   
             <li><a href="#">홈</a></li>
             <li><a href="#">팬카페</a></li>
             <li><a href="#">카페랭킹</a></li>
             <li><a href="#">내카페</a></li>
-            <li><a href="#">온라인교실</a></li>
+            <li class="last"><a href="#">온라인교실</a></li>
 
         </ul>
+        <form id = "serachform">
+            <div class="selectbox">
+                <a href="#" class ="search-select">통합검색</a>
+                <div class="search-sbox">
+                    <a href="#">카페검색</a>
+                    <a href="#">통합검색</a>
+                    <a href="#">카페이름</a>
+                    <a href="#">카페글</a>
+                </div>
+
+            </div>
+            <input type = "text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요."/>
+            <button type = "button" class="btn-none">
+                
+            </button>
+        </form>
     </div>
     <!-- /header main -->
 </header>

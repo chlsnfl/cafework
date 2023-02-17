@@ -149,23 +149,51 @@ a.all{
     background: #eee;
 }
 /* ##########MAIN###########*/
+/* .main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ff5656;
+    font-size: 40;
+    text-shadow: 0 0 10px #ff5656;
+    width: 15%;
+} */
 .main-list{
-    margin-top: 5px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 .main-list a{
     padding:  15px;
 }
-.main-list:hover{
-    font-weight: bold;
-    font-style: red;
+.main-list>li{
+    margin-right: 30px;
+    font-size: 18px;
+    line-height: 1;;
 }
-.main-list>li:first-child{
+.main-list>li:first-child a,
+.main-list>li a:hover{
+    font-weight: 600;
     color: red;
 }
-.main-list>li:last-child{
-    border-left: 1px solid #888;
-    color: red;
+.main-list>li.last{
+    padding-left: 20px;
+    border-left: 1px solid #777;
 }
-
+.main-list>li.last a{
+    color: #ff5656;
+}
+#serachform{
+    width: 20%;
+    text-align: right;
+}
+.selectbox{
+    display: inline-block;
+    position: relative;
+}
+.search-sbox{
+    position: absolute;
+    background: #fff;
+    border: 1px solid #333;
+    width: 150px;
+}
+.search-sbox>a{
+    display: block;
+}
 /* ##########SECTION###########*/
