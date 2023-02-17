@@ -18,8 +18,13 @@ body{
 .d-flex{
     display: flex;
 }
-.jusitfy-content-between{
+.justify-content-between{
     justify-content: space-between;
+}
+.list-style-none{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .align-items-center{
     align-items: center;
@@ -46,5 +51,98 @@ header{
 .mainlogo>img{
     height: 40px
 }
+.loging{
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 3px 8px;
+}
+.top-nav>li:not(:first-child){
+    margin-left: 25px;
+}
+.top-nav>li a,
+.top-nav>li a span.material-symbols-outlined{
+    color: #999;
+}
+.top-nav>li a,
+.top-nav>li a span.material-symbols-outlined:hover{
+    color: #2b2b2b;
+}
+.top-nav>li:hover .list-view{
+    display: block;
+}
+.list view{
+    background : #fff;
+    border: 1px solid #999;
+    position: absolute;
+    z-index: -3px;
+}
+.top-nav>li:last-child {    
+    position: relative;
+}
+.list-view {
+    background: #fff;
+    border: 1px solid#ccc;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top : 50px;
+    display: none;
+}
+.list-view::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: -20px;
+    z-index: 4;
+    background: url(../images/KakaoTalk_20230217_161853573.png);
+}
+.icon-list{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 30px;
+}
+.top-nav>li .icon-list a{
 
+    font-weight: 600;
+    color: #000;
+}
+.icon-list a:hover{
+    text-decoration: underline;
+}
+.icon-list img{
+    height: 30px;
+}
+
+.icon-list li:not(:last-child){
+    margin-right: 40px;
+}
+.map-list{
+    margin: 0px 20px 10px;
+}
+.map-list>li{
+    width: 25%;
+    border-right: 1px solid #ededed;
+    padding-left: 5px;
+}
+.map-list>li:last-child{
+    border: none;
+}
+.map-list>li a{
+    display: block;
+    font-size: 13px;
+    color: #2b2b2b;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+a.all{
+    display: block;
+    padding: 15px;
+    background: #eee;
+}
 /* ##########SECTION###########*/
