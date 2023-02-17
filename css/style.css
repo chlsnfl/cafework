@@ -18,6 +18,9 @@ body{
 .d-flex{
     display: flex;
 }
+.d-block{
+    display: block;
+}
 .justify-content-between{
     justify-content: space-between;
 }
@@ -145,4 +148,24 @@ a.all{
     padding: 15px;
     background: #eee;
 }
+/* ##########MAIN###########*/
+.main-list{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.main-list a{
+    padding:  15px;
+}
+.main-list:hover{
+    font-weight: bold;
+    font-style: red;
+}
+.main-list>li:first-child{
+    color: red;
+}
+.main-list>li:last-child{
+    border-left: 1px solid #888;
+    color: red;
+}
+
 /* ##########SECTION###########*/
