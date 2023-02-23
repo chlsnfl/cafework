@@ -1,148 +1,257 @@
-*{box-sizing: border-box;}
+*{ box-sizing:border-box;}
 body{
-    margin: 0;
-    font-family:  'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    color: #333
+    margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:16px;
+    color:#333;
 }
 .container{
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width:1300px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .row{
-    margin-left: -15px;
-    margin-right: -15px;
-    display: flex;
+    margin-left:-15px;
+    margin-right:-15px;
+    display:flex;
 }
 .d-flex{
-    display: flex;
+    display:flex;
 }
 .justify-content-between{
     justify-content: space-between;
 }
 .list-style-none{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     list-style: none;
 }
 .align-items-center{
-    align-items: center;
+    align-items:center;
 }
 .text-center{
-    text-align: center;
+    text-align:center;
 }
 .red{
-    color: #ff5656;
+    color:#ff5656;
 }
 .bold{
-    font-weight: 700;
+    font-weight:700;
 }
 a{
-    text-decoration: none;
-    color: #2b2b2b;
+    text-decoration:none;
+    color:#2b2b2b;
 }
-
-
-/* ##########HEADER###########*/
+.d-block{
+    display:block;
+}
+/* ############HEADER############# */
 header{
-    padding-top: 10px;
+    padding-top:10px;
 }
 .mainlogo>img{
-    height: 40px
+   height:40px;
 }
 .loging{
-    border: 1px solid #ccc;
-    font-size: 13px;
-    padding: 3px 8px;
+    border:1px solid #ccc;
+    font-size:13px;
+    padding:2px 8px;
 }
 .top-nav>li:not(:first-child){
-    margin-left: 25px;
+    margin-left:25px;
 }
 .top-nav>li a,
-.top-nav>li a span.material-symbols-outlined{
-    color: #999;
+.top-nav>li a span.material-symbols-sharp{
+    color:#999;
 }
-.top-nav>li a,
-.top-nav>li a span.material-symbols-outlined:hover{
-    color: #2b2b2b;
+.top-nav>li a:hover,
+.top-nav>li a span.material-symbols-sharp:hover{
+    color:#2b2b2b;
+}
+.top-nav>li:last-child{
+    position:relative;
 }
 .top-nav>li:hover .list-view{
-    display: block;
+    display:block;
 }
-.list view{
-    background : #fff;
-    border: 1px solid #999;
-    position: absolute;
-    z-index: -3px;
-}
-.top-nav>li:last-child {    
-    position: relative;
-}
-.list-view {
-    background: #fff;
-    border: 1px solid#ccc;
-    position: absolute;
-    z-index: 3;
-    right: 0;
-    top : 50px;
-    display: none;
+.list-view{
+    background:#fff;
+    border:1px solid #ccc;
+    position:absolute;
+    z-index:3;
+    right:0;
+    top:45px;
+    display:none;
 }
 .list-view::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: 0;
-    top: -20px;
-    z-index: 4;
-    background: url(../images/KakaoTalk_20230217_161853573.png);
+    content:"";
+    display:block;
+    position:absolute;
+    width:25px;
+    height:25px;
+    right:3px;
+    top:-20px;
+    z-index:4;
+    background:url(../images/KakaoTalk_20230217_161853573.png) no-repeat;
 }
 .icon-list{
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ededed;
-    margin-bottom: 30px;
+    padding:15px 20px;
+    font-size:13px;
+    border-bottom:1px solid #dedede;
+    margin-bottom:10px;
 }
 .top-nav>li .icon-list a{
-
-    font-weight: 600;
-    color: #000;
+    font-weight:600;
+    color:#000;
 }
 .icon-list a:hover{
-    text-decoration: underline;
+    text-decoration:underline;
 }
 .icon-list img{
-    height: 30px;
+    height:35px;
 }
-
 .icon-list li:not(:last-child){
-    margin-right: 40px;
+   margin-right:40px;
 }
 .map-list{
-    margin: 0px 20px 10px;
+    margin:0px 20px 10px;
 }
 .map-list>li{
-    width: 25%;
-    border-right: 1px solid #ededed;
-    padding-left: 5px;
+    width:25%;
+    border-right:1px solid #dedede;
+    padding-left:10px;
 }
 .map-list>li:last-child{
-    border: none;
+    border:none;
 }
-.map-list>li a{
-    display: block;
-    font-size: 13px;
-    color: #2b2b2b;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    text-align: center;
+.map-list>li>a{
+    display:block;
+    font-size:13px;
+    color:#2b2b2b;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 a.all{
-    display: block;
-    padding: 15px;
-    background: #eee;
+    display:block;
+    padding:15px;
+    background:#efefef;
 }
-/* ##########SECTION###########*/
+/* ############SECTION1########### */
+.logo{
+    font-family: 'Tourney', cursive;
+    color:#ff5656;
+    font-size:40px;
+    text-shadow:0 0 10px #ff5656;
+    width:15%;
+}
+.nav{
+    width:65%;
+}
+.nav>li{
+    margin-right:30px;
+    font-size:18px;
+    line-height:1;
+}
+.nav>li:first-child a,
+.nav>li a:hover{
+    color:#ff5656;
+    font-weight:600;
+}
+.nav>li.last{
+    padding-left:20px;
+    border-left:1px solid #dedede;
+}
+.nav>li.last a{
+    color:#ff5656;
+}
+#searchform{
+    width:25%;
+    text-align:right;
+}
+.selectbox{
+    display:inline-block;
+    position:relative;
+    width:80px;
+}
+.search-select{
+    font-size:14px;
+    padding-right:2px;
+}
+.search-sbox{
+    position:absolute;
+    background:#fff;
+    border:1px solid #999;
+    padding:10px;
+    font-size:13px;
+    display:none;
+}
+.search-sbox a:first-child{
+    color:#ff5656;
+    font-weight:600;
+}
+.search-sbox>a{
+    display:block;
+}
+.search-sbox>a:hover{
+    background:#fbe0e0;
+    text-decoration:underline;
+}
+#searchtext{
+    padding:5px;
+    margin-left: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-none{
+    border: none;
+    font-size: 18px;
+    background: none;
+}
+/****************HERO******************/
+.hero{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 500px;
+    background: url(../images/animal.jpg) no-repeat right 250px ;
+    background-size: 35%;
+}
+.hero h1{
+    font-size: 18px;
+    font-weight: 300;
+}
+.hero li a{
+    font-size: 46px;
+    color: #666;
+    font-weight: 300;
+}
+.hero li a span{
+    display: inline-block;
+    font-size: 14px;
+    max-width: 80px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.hero a span.list{
+    font-size: 46px;
+    color: #666;
+    font-weight: 300;
+    max-width: 800px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+.hero li:hover a span.list,
+.hero li.active a span.list{
+    font-weight: 700;
+    color: #333;
+}
+/*******best*********/
+.best{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #efefef;
+    border-top: 4px solid #000;
+}

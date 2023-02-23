@@ -5,115 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOUM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Tourney:wght@200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="stylesheet" href="css/style.css">
+
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/cafe.js"></script>
 </head>
 <body>
     <header>
-        <!-- header top -->
-    <div class="container d-flex justify-content-between" >
-        <a href="#" class ="mainlogo"><img src="images/logo-social.png" alt="로고"></a>
+        <!-- header top-->
+    <div class="container d-flex justify-content-between">
+        <a href="#" class="mainlogo"><img src="images/logo-social.png" alt="#"></a>
         <ul class="top-nav d-flex list-style-none">
-            <li><a href="#" class ="loging">로그인</a></li>
+            <li><a href="#" class="loging">로그인</a></li>
             <li>
-                <a href="mailto:"><span class="material-symbols-outlined">
+                <a href="mailto:"><span class="material-symbols-sharp">
                 mail
-            </span>
+                </span>
                 </a>
             </li>
             <li>
-                <a href="mailto:"><span class="material-symbols-outlined">
-                grid_view
+                <a href="#" class="list">
+                <span class="material-symbols-sharp">
+                    grid_view
                 </span>
-            </a>
-            <div class="list-view">
-                <!-- 아이콘4개 -->
-                <ul class="icon-list list-style-none d-flex justify-content-between text-center">
-                   <li><a href="#">
-                    <img src ="images/KakaoTalk_20230217_144358468.png" alt = "view">
-                    웹
-                    </a></li> 
-                   <li><a href="#">
-                    <img src ="images/KakaoTalk_20230217_144358539.png" alt = "view">
-                    분식
-                    </a></li>
-                   <li><a href="#">
-                    <img src ="images/KakaoTalk_20230217_144358609.png" alt = "view">
-                    냠냠
-                    </a></li>
-                   <li><a href="#">
-                    <img src ="images/KakaoTalk_20230217_144358679.png" alt = "view">
-                    간식
-                    </a></li>
-                </ul>
-                <ul class = "map-list d-flex list-style-none">
-                    <li>
-                        <a href ="#">블로그</a>
-                        <a href ="#">뉴스</a>
-                        <a href ="#">레터</a>
-                        <a href ="#">SNS</a>
-                    </li>
-                    <li>                        
-                        <a href ="#">주먹밥</a>
-                        <a href ="#">김말이</a>
-                        <a href ="#">떡볶이</a>
-                        <a href ="#">묵은지</a>
-                    </li>
-                    <li>
-                        <a href ="#">햄버거</a>
-                        <a href ="#">콜라</a>
-                        <a href ="#">감자튀김</a>
-                        <a href ="#">사이다</a>
-                    </li>
-                    <li>
-                        <a href ="#">메로나</a>
-                        <a href ="#">돼지바</a>
-                        <a href ="#">보석바</a>
-                        <a href ="#">와와와</a>
-                    </li>
-                </ul>
-                <a href="#" class = "all text-center">전체보기</a>
+                </a>
+                <div class="list-view">
+                    <!-- 아이콘 4개-->
+                    <ul class="text-center icon-list list-style-none d-flex justify-content-between">
+                        <li><a href="#">
+                               <img src="images/KakaoTalk_20230217_144358468.png" alt="#">
+                               카페    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/KakaoTalk_20230217_144358539.png" alt="#">
+                                커피    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/KakaoTalk_20230217_144358609.png" alt="#">
+                                회식     
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <img src="images/KakaoTalk_20230217_144358679.png" alt="#">
+                                채팅 
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 네비게이션 아이콘당 한 줄씩-->
+                    <ul class="map-list d-flex list-style-none">
+                        <li>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                        </li>
+                        <li>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                        </li>
+                        <li>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                        </li>
+                        <li>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                            <a href="#">블로그</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="all text-center">전체보기</a>
+                </div>
+            </li>
+        </ul> 
+     </div>  
+     <!--/header top-->
+
+     <!-- header main-->
+     <div class="main-header container d-flex align-items-center">
+         <a href="#" class="logo d-block"><img src="images/cafe-logo.png"></a>
+         <ul class="nav list-style-none d-flex">
+             <li><a href="#">홈</li>
+             <li><a href="#">팬카페</a></li>   
+             <li><a href="#">카페랭킹</a></li> 
+             <li><a href="#">내카페</a></li>
+             <li class="last"><a href="#">온라인 교실</a></li> 
+         </ul>
+         <form id="searchform" method="get">
+            <div class="selectbox">
+               <a href="#" class="search-select">카페검색</a>
+               <i class="fa-solid fa-angle-down"></i>
+               <div class="search-sbox">
+                  <a href="#">카페검색</a>
+                  <a href="#">통합검색</a>
+                  <a href="#">카페이름</a>
+                  <a href="#">카페글</a>
+               </div>
             </div>
+            <input type="hidden" name="selectbox" id="selectbox">
+            <input type="text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요."/>
+            <button type="submit" class="btn-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </form>
+
+     </div>    
+     <!-- /header main-->
+     <!-- hero main -->
+     <section class="hero container">
+        <h1>이야기 하나 <strong>그때도 맞고 지금도 맞다</strong>뀨</h1>
+        <ul class="list-style-none">
+            <li><a href="#"><span class="list">인간의 불어</span> <span>꽃 가치를</span></a></li>
+            <li><a href="#"><span class="list">같이, 못할 따뜻한 대중을 천고에</span> <span>그와 듣기만</span> </a></li>
+            <li><a href="#"><span class = "list">구하지 풍부하게 원질이 뿐이며</span> <span>피어나기 위하여</span></a></li>
+            <li><a href="#"><span class="list">얼마나 이는 </span><span>인생의 구하지 위하여서</span></a></li> 
+                
+
         </ul>
-    </div>
-    <!-- /header top -->
-   <!-- header main -->
-   <div class="main container d-flex align-items-center">
-    <a href="#" class="logo d-block"><img src="images/cafelogo.png" alt = "다음로고"></a>
-    <ul class="main-list list-style-none d-flex text-center">   
-        <li><a href="#">홈</a></li>
-        <li><a href="#">팬카페</a></li>
-        <li><a href="#">카페랭킹</a></li>
-        <li><a href="#">내카페</a></li>
-        <li class="last"><a href="#">온라인교실</a></li>
+     </section>
+     <!-- best cafe 6 -->
+     <section class="best">
 
-    </ul>
-    <form id = "serachform">
-        <div class="selectbox">
-            <a href="#" class ="search-select">통합검색</a>
-            <div class="search-sbox">
-                <a href="#">카페검색</a>
-                <a href="#">통합검색</a>
-                <a href="#">카페이름</a>
-                <a href="#">카페글</a>
-            </div>
-
-        </div>
-        <input type = "text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요."/>
-        <button type = "button" class="btn-none">
-            
-        </button>
-    </form>
-</div>
-    <!-- header main -->
-
-    <!-- /header main -->
-</header>
+     </section>
+    </header>  
 </body>
 </html>
