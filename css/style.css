@@ -45,6 +45,11 @@ a{
 .d-block{
     display:block;
 }
+.ellipise{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /* ############HEADER############# */
 header{
     padding-top:10px;
@@ -215,6 +220,8 @@ a.all{
     min-height: 500px;
     background: url(../images/animal.jpg) no-repeat right 250px ;
     background-size: 35%;
+    position: relative;
+    height: 450px;
 }
 .hero h1{
     font-size: 18px;
@@ -248,10 +255,101 @@ a.all{
     font-weight: 700;
     color: #333;
 }
+.new{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.zindex{
+    z-index: 2;
+    animation-duration: 0.3s;
+    animation-name: identifier;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+span.prev,span.next{
+    position:absolute;
+    top:250px;
+}
+span.prev{
+    left:80px;
+}
+span.next{
+    right:80px;
+}
+span.prev i,span.next i{
+    font-size:5em;
+    cursor:pointer;
+    color:#666;
+}
+
+    
 /*******best*********/
 .best{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #efefef;
     border-top: 4px solid #000;
+}
+@keyframes identifier {
+    0%{
+       top: 100px;
+       opacity:0;
+    }
+    70%{
+       top: -20px;
+       opacity: 1;
+    }   
+    90%{
+       top: 0;
+    }
+}
+
+/*********************************************************/
+.best .col-4>a{
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #efefef;
+    box-shadow: 0 1px 4px rgb(0 0 0 /3%);
+    transition: all 0.3s;
+}
+div.img{
+    width: 80px;
+    height: 80px;
+    background: url(../images/best.png) no-repeat;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+    float: left;
+    margin-right: 20px;
+}
+.best h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.best p{
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hash span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+.hash span::before{
+    content: "#";
+}
+.hash span:first-child{
+    color: #ff5656;
+}
+.best .col-4>a:hover{
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 /2%),    
+                0 1px 4px 0 rgb(0,0,0,.5);
+
 }
