@@ -292,7 +292,9 @@ span.prev i,span.next i{
     padding-bottom: 50px;
     background-color: #efefef;
     border-top: 4px solid #000;
+    border-bottom: 1px solid #ededed;
 }
+
 @keyframes identifier {
     0%{
        top: 100px;
@@ -318,6 +320,11 @@ span.prev i,span.next i{
     border: 1px solid #efefef;
     box-shadow: 0 1px 4px rgb(0 0 0 /3%);
     transition: all 0.3s;
+}
+.best .col-4>a:hover{
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 /2%),    
+                0 1px 4px 0 rgb(0,0,0,.5);
+
 }
 div.img{
     width: 80px;
@@ -348,8 +355,251 @@ div.img{
 .hash span:first-child{
     color: #ff5656;
 }
-.best .col-4>a:hover{
-    box-shadow: 0 2px 12px 0 rgb(0 0 0 /2%),    
-                0 1px 4px 0 rgb(0,0,0,.5);
+/**********cafe list**********/
 
+.cafe-list{
+    padding-top: 60px;
+}
+.cafe-list h1{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.clist{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+.clist>li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+}
+.tbox img, .tbox h1{
+    margin-right: 20px;
+}
+.tbox p{
+    font-size: 1.2em;
+}
+.cfe p:first-child{
+    width: 100px;
+}
+p.dg{
+    text-align: right;
+    font-weight: 700;
+    color: #ff5656;
+}
+p.dg::before{
+    content: "댓글";
+    color: #333;
+}
+.clist>li:hover{
+    background-color: #efefef;
+}
+.notice-list{
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.notice-list li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.notice-list li:first-child{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.smallbanner p {
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+.niniz,
+.rabbit {
+    height: 150px;
+}
+.niniz {
+    background: #4260aa;
+    overflow: hidden;
+    position: relative;
+}
+.niniz .face {
+    width: 136px;
+    height: 128px;
+    border: 4px solid #000;
+    position: absolute;
+    background: #fff;
+    border-radius: 60px;
+    top: 50px;
+    right: -15px;
+}
+.niniz .eye1 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 103px;
+    right: 64px;
+}
+.niniz .eye2 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 103px;
+    right: 34px;
+}
+.niniz .nose {
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a8e6ff;
+    position: absolute;
+    top: 110px;
+    right: 40px;
+}
+.niniz .line1 {
+    width: 11px;
+    height: 6px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 3px solid #000;
+    border-top: 0px ;
+    position: absolute;
+    top: 118px;
+    right: 52px;
+}
+.niniz .line2 {
+    width: 11px;
+    height: 6px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 3px solid #000;
+    border-top: 0px ;
+    position: absolute;
+    top: 118px;
+    right: 43px;
+}
+.niniz .btn1 {
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 105px;
+}
+.niniz .btn2 {
+    width: 7px;
+    height: 7px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 120px;
+}
+.rabbit {
+    background: #ed6d6e;
+    position: relative;
+    overflow: hidden;
+}
+.rabbit .face {
+    width: 150px;
+    height: 110px;
+    border: 4px solid #000;
+    border-radius: 46%;
+    background: #ffccd3;
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+}
+.rabbit .ear1 {
+    width: 35px;
+    height: 50px;
+    border: 4px solid #000;
+    border-bottom: none;
+    border-top-right-radius: 46%;
+    border-top-left-radius: 46%;
+    background: #ffccd3;
+    transform: rotate(-13deg);
+    position: absolute;
+    top: 18px;
+    right: 48px;
+}
+.rabbit .ear2 {
+    width: 35px;
+    height: 50px;
+    border: 4px solid #000;
+    border-bottom: none;
+    border-top-right-radius: 46%;
+    border-top-left-radius: 46%;
+    background: #ffccd3;
+    transform: rotate(13deg);
+    position: absolute;
+    top: 18px;
+    right: 7px;
+}
+.rabbit .eye1 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 103px;
+    right: 60px;
+}
+.rabbit .eye2 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 103px;
+    right: 30px;
+}
+.rabbit .line1 {
+    width: 11px;
+    height: 6px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 3px solid #000;
+    border-top: 0px ;
+    position: absolute;
+    top: 120px;
+    right: 47px;
+}
+.rabbit .line2 {
+    width: 11px;
+    height: 6px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 3px solid #000;
+    border-top: 0px ;
+    position: absolute;
+    top: 120px;
+    right: 38px;
+}
+.rabbit .btn1 {
+    width: 7px;
+    height: 7px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 105px;
+}
+.rabbit .btn2 {
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 120px;
 }
