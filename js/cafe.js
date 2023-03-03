@@ -44,11 +44,26 @@ $(function(){
      });
 
      $('.prev').click(function(){
-        clearInterval();
+        clearInterval(); 
         preEvent();
         slide=setInterval(slide());
      });
      myTime();
+     
+     $(window).on('scroll', function(){
+      if($(window).scrollTop()>2000){
+         $('.angletop').fadeIn();
+      }else{
+         $('.angletop').fadeOut();
+      }
+     });
+
+     $('.angletop').click(function(e){
+      e.preventDefault();
+      $('html,body').animate({
+         scrollTop:'0'
+      },300);
+     });
      
    });  //jquery
    
